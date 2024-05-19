@@ -11,7 +11,13 @@ const New = () => {
   const { onCreate } = useContext(DiaryDispatchContext);
 
   const onSubmit = (input) => {
-    onCreate(input.createdDate.getTime(), input.emotionId, input.content);
+    onCreate(
+      input.createdDate.getTime(),
+      input.emotionId,
+      input.title,
+      input.content
+    );
+
     alert("일기가 성공적으로 저장되었습니다!");
     nav("/", { replace: true });
   };

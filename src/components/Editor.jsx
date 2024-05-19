@@ -13,6 +13,7 @@ const Editor = ({ onSubmit, initData }) => {
   const [input, setInput] = useState({
     createdDate: new Date(),
     emotionId: 3,
+    title: "",
     content: "",
   });
 
@@ -76,6 +77,12 @@ const Editor = ({ onSubmit, initData }) => {
       </section>
       <section className="content_section">
         <h4>오늘의 일기</h4>
+        <input
+          name="title"
+          placeholder="일기 제목"
+          value={input.title}
+          onChange={onChangeInput}
+        />
         <textarea
           placeholder="오늘 하루는 어땠나요?"
           name="content"

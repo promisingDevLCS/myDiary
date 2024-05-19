@@ -14,10 +14,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const FireStore = getFirestore(app);
+const fireStore = getFirestore(app); // firestore DB
 
 // Login Provider
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
-export { app, auth, FireStore, googleProvider, githubProvider };
+export default { app, auth, fireStore, googleProvider, githubProvider };
