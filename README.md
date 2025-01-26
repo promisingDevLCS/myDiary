@@ -8,4 +8,4 @@
 |-------|------------|
 | Language  | React  |
 |  Backend  | Firebase  |
-|  DB      |  Firebase  |
+|  DB      |  Firebasesssssssssssss  |
